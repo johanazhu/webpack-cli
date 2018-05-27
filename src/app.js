@@ -9,4 +9,5 @@ import $ from 'jquery'
 
 $(".btn").click(function(){
     console.log($);
+    console.log(11);
 })

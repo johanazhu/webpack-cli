@@ -99,7 +99,8 @@ $ git config --global alias.st status
 git st(看下舞台上有什么文件)
 git add -A (提交所有文件)
 
-
+---------------------------------------
+接着看 README-第二部分
 
 
 
