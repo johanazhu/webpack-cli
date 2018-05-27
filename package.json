@@ -1,0 +1,25 @@
+{
+  "name": "webpack-cli",
+  "version": "1.0.0",
+  "description": "此项目是自己从零开始搭建强迫症版webpack脚手架，项目是从零开始，再写的同时也是对自己webpack，es6，gulp知识的一种梳理。\r ## 第一步\r 注册github账号，并创立项目，接着按照github 的提示，再本地git bash中输入\r ****\r     echo \"# webpack-cli\" >> README.md\r     git init\r     git add README.md\r     git commit -m \"first commit\"\r     git remote add origin git@github.com:johanazhu/webpack-cli.git\r     git push -u origin master\r ---------------------------------------",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johanazhu/webpack-cli.git"
+  },
+  "author": "johan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johanazhu/webpack-cli/issues"
+  },
+  "homepage": "https://github.com/johanazhu/webpack-cli#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  }
+}
