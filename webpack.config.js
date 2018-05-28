@@ -10,5 +10,14 @@ module.exports = {
       path: __dirname + '/build',
       filename: '[name].js'
     },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                use: 'babel-loader',
+                exclude: /node_modules/
+            }
+        ]
+    },
     watch: true
 }

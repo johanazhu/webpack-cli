@@ -1,0 +1,12 @@
+{
+    "presets": [
+        "env",
+        "stage-0",
+        "stage-1",
+        "stage-2",
+        "stafe-3"
+    ],
+    "plugins": [
+
+    ]
+}
