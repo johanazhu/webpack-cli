@@ -29,6 +29,10 @@
     "babel-preset-stage-1": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
-    "webpack": "^3.8.1"
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.5.0",
+    "run-sequence": "^2.2.1",
+    "webpack": "^3.8.1",
+    "webpack-stream": "^4.0.3"
   }
 }
