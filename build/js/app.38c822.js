@@ -83,6 +83,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".btn").click(function () {
   console.log(__WEBPACK_IMPORTED_MODULE_0_jquery___default.a);
   console.log(22);
+  console.log(33);
 });
 
 /***/ }),

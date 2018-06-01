@@ -2,24 +2,20 @@
  * Created by Johan on 2018/5/29.
  */
 
-let gulp = require('gulp');
-let connect = require('gulp-connect')
-let webpackStream = require('webpack-stream')
-let webpack = require('webpack')
+let gulp = require('gulp')
+let $ = require('gulp-load-plugins')()
+
 let runSequence = require('run-sequence')
+let fs = require('fs')
 
-gulp.task('server', function(){
-    connect.server({
-        root: './',
-        port: 9005
-    })
+
+
+fs.readdirSync('./gulp').forEach((file) => {
+    require('./gulp/' + file)(gulp, $);
 })
 
-gulp.task('webpack',()=>{
-    return gulp.src('./src/app.js')
-        .pipe(webpackStream(require('./webpack.config'), webpack))
-        .pipe(gulp.dest('./dev'));
-})
+
+
 
 gulp.task('dev',(done)=>{
     runSequence(
@@ -28,3 +24,21 @@ gulp.task('dev',(done)=>{
         done
     )
 })
+
+gulp.task('build',(done)=>{
+    runSequence(
+        ['clean:build'],
+        ['webpack:build'],
+        done
+    )
+})
+
+
+
+
+
+
+
+
+
+
